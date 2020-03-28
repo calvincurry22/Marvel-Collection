@@ -55,8 +55,8 @@ body {
 
 .previewContainer {
     background-color: gold;
-    border: 1.5px solid black;
-    box-shadow: 3px 4px 20px 0px rgba(50, 50, 50, 1);
+    /* border: 1.5px solid black; */
+    box-shadow: -4px 2px 30px 0px rgba(50, 50, 50, 1);
     height: 1000px;
     margin: 0 auto;
     padding: 0px 20px;
@@ -66,10 +66,13 @@ body {
 
 .previewHeader {
     font-family: 'Comic Neue', cursive;
+    text-align: center;
+    
 }
 
 #characterName {
-    font-family: 'Comic Neue', cursive;;
+    font-family: 'Comic Neue', cursive;
+    padding-top: 20px;
 }
 
 #characterImage {
