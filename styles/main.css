@@ -52,6 +52,7 @@ body {
     font-family: Josefin Sans;
     font-size: 18px;
     font-weight: bolder;
+    padding:5px;
 }
 
 .characterSelectContainer {
