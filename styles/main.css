@@ -11,11 +11,12 @@ body {
     border-top: 4px solid black;
     display: inline-flex;
     font-family: Josefin Sans;
-    font-size: 80px;
+    font-size: 75px;
     letter-spacing: -11px;
-    margin: 0px 0px 0px 0px;
-    padding-right: 10px;
-    padding-top: 10px;
+    margin: -1px 0px 0px 0px;
+    padding-bottom: 3px;
+    padding-right: 32px;
+    padding-top: 18px;
     text-align: center;
 }
 
@@ -25,9 +26,16 @@ body {
     flex-direction: row;
     
 }
-#headerImage {
-    border-bottom: 4px solid black;
+
+.headerimage {
+    background-color: red;
+    border-bottom: 5px solid black;
     border-left: 4px solid black;
+    height: 100px;
+    padding-bottom: 0px;
+
+}
+#headerImage {
     border-top: 4px solid black;
     height: 90px;
     margin-bottom: 0px;
@@ -54,7 +62,10 @@ body {
 }
 
 .previewContainer {
-    background-color: gold;
+    
+    background-image: url("https://image.freepik.com/vetores-gratis/fundo-do-estilo-da-banda-desenhada-textura-da-copia-de-intervalo-minimo-ilustracao-vetorial-em-fundo-laranja_88188-581.jpg");
+    
+    background-size: 791.6px 1000px;
     /* border: 1.5px solid black; */
     box-shadow: -4px 2px 30px 0px rgba(50, 50, 50, 1);
     height: 1000px;
@@ -66,6 +77,8 @@ body {
 
 .previewHeader {
     font-family: 'Comic Neue', cursive;
+    margin: 0px;
+    padding-top: 20px;
     text-align: center;
     
 }
@@ -79,11 +92,17 @@ body {
     border: 3px solid black;
     border-radius: 5px;
     box-shadow: 0px 10px 18px 0px rgba(50, 50, 50, 1);
-    margin-left: 35%;
+    margin-left: 3%;
+}
+
+#imageDescriptionContainer {
+    display: flex;
+    flex-direction: row;
 }
 
 #characterDescription {
     font-family: Josefin sans;
+    margin-left: 5%;
 }
 
 .comicsContainer {

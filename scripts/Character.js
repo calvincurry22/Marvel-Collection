@@ -23,8 +23,10 @@ export const Character = (characterObj) => {
             characterContainer.innerHTML=
                  `
                     <h2 id="characterName">${characterObj.name}</h2>
-                    <img id="characterImage" src="${characterObj.thumbnail.path}/portrait_incredible.${characterObj.thumbnail.extension}" alt="" srcset="">
-                    <p id="characterDescription">Description: ${characterObj.description}</p>
+                    <div id="imageDescriptionContainer">
+                        <img id="characterImage" src="${characterObj.thumbnail.path}/portrait_incredible.${characterObj.thumbnail.extension}" alt="" srcset="">
+                        <p id="characterDescription">Description: ${characterObj.description}</p>
+                    </div>
                     <h2 id="comicsHeader">Associated Comics</h2>
                     <div class="comicsContainer" style="overflow-y:scroll;">
                     ${comicImages.map( comicObject => {
