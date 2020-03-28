@@ -62,13 +62,13 @@ body {
 }
 
 .previewContainer {
-    
-    background-image: url("https://image.freepik.com/vetores-gratis/fundo-do-estilo-da-banda-desenhada-textura-da-copia-de-intervalo-minimo-ilustracao-vetorial-em-fundo-laranja_88188-581.jpg");
-    
+    background-image: url("https://img.freepik.com/free-vector/blue-abstract-comic-book-background-cartoon-style-bigbamm-sunlight-vector-illustration_68708-190.jpg?size=626&ext=jpg");
     background-size: 791.6px 1000px;
-    /* border: 1.5px solid black; */
-    box-shadow: -4px 2px 30px 0px rgba(50, 50, 50, 1);
-    height: 1000px;
+    border-radius: 2px;
+    box-shadow: 1px 7px 8px 4px rgba(50, 50, 50, 1);
+    display: flex;
+    flex-wrap: wrap;
+    height: 920px;
     margin: 0 auto;
     padding: 0px 20px;
     width: 50%;
@@ -77,7 +77,7 @@ body {
 
 .previewHeader {
     font-family: 'Comic Neue', cursive;
-    margin: 0px;
+    margin: 0px 0px 0px 40px;
     padding-top: 20px;
     text-align: center;
     
@@ -85,7 +85,10 @@ body {
 
 #characterName {
     font-family: 'Comic Neue', cursive;
+    font-size: 30px;
+    margin-left: 3.5%;
     padding-top: 20px;
+    text-transform: uppercase;
 }
 
 #characterImage {
@@ -100,9 +103,16 @@ body {
     flex-direction: row;
 }
 
+#characterDescriptionHeader {
+    font-family: Josefin sans;
+    font-size: 20px;
+    height:40px;
+    margin-left: 5%;
+}
+
 #characterDescription {
     font-family: Josefin sans;
-    margin-left: 5%;
+    margin: 40px 0px 0px 20px;
 }
 
 .comicsContainer {
@@ -112,6 +122,7 @@ body {
 
 #comicsHeader {
     font-family: 'Comic Neue', cursive;
+    text-align: center;
 }
 
 #comicImage {
