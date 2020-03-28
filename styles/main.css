@@ -56,8 +56,6 @@ body {
 }
 
 .characterSelectContainer {
-    /* background-color: gold;
-    border: 2px solid black; */
     margin: 0 auto;
     margin-bottom: 10px;
     margin-top: 70px;
@@ -69,7 +67,7 @@ body {
     background-image: url("https://img.freepik.com/free-vector/blue-abstract-comic-book-background-cartoon-style-bigbamm-sunlight-vector-illustration_68708-190.jpg?size=626&ext=jpg");
     background-size: 791.6px 1000px;
     border-radius: 2px;
-    box-shadow:         0px -1px 18px 4px rgba(50, 50, 50, 1);
+    box-shadow: 0px 7px 8px 8px rgba(50, 50, 50, 1);
     display: flex;
     flex-wrap: wrap;
     height: 920px;
@@ -98,7 +96,7 @@ body {
 
 #characterImage {
     border: 3px solid black;
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow: 0px 10px 18px 0px rgba(50, 50, 50, 1);
     margin-left: 3%;
 }
@@ -121,15 +119,36 @@ body {
 }
 
 .comicsContainer {
-    height: 400px;
-    margin-left: 10%;
+    display: flex;
+    height: 320px;
+
 }
 
 #comicsHeader {
     font-family: 'Comic Neue', cursive;
+    height: 40px;
     text-align: center;
+    width: 100%;
+    
 }
 
 #comicImage {
     margin-right: 5px;
+}
+
+#comicDetailsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 270px;
+}
+
+button {
+    height: 20px;
+    margin: -10px 0px 0px 30px;
+
+    
+}
+
+a {
+    height: 225px;
 }
