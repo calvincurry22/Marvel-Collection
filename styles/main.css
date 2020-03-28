@@ -92,6 +92,7 @@ body {
     margin-left: 3.5%;
     padding-top: 20px;
     text-transform: uppercase;
+    width: 100%;
 }
 
 #characterImage {
@@ -104,12 +105,12 @@ body {
 #imageDescriptionContainer {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 #characterDescriptionHeader {
     font-family: Josefin sans;
     font-size: 20px;
-    height:40px;
     margin-left: 5%;
 }
 
