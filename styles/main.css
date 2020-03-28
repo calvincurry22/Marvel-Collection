@@ -65,7 +65,7 @@ body {
     background-image: url("https://img.freepik.com/free-vector/blue-abstract-comic-book-background-cartoon-style-bigbamm-sunlight-vector-illustration_68708-190.jpg?size=626&ext=jpg");
     background-size: 791.6px 1000px;
     border-radius: 2px;
-    box-shadow: 1px 7px 8px 4px rgba(50, 50, 50, 1);
+    box-shadow:         0px -1px 18px 4px rgba(50, 50, 50, 1);
     display: flex;
     flex-wrap: wrap;
     height: 920px;
