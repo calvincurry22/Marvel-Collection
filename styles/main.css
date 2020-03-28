@@ -11,11 +11,12 @@ body {
     border-top: 4px solid black;
     display: inline-flex;
     font-family: Josefin Sans;
-    font-size: 80px;
+    font-size: 75px;
     letter-spacing: -11px;
-    margin: 0px 0px 0px 0px;
-    padding-right: 10px;
-    padding-top: 10px;
+    margin: -1px 0px 0px 0px;
+    padding-bottom: 3px;
+    padding-right: 32px;
+    padding-top: 18px;
     text-align: center;
 }
 
@@ -25,9 +26,16 @@ body {
     flex-direction: row;
     
 }
-#headerImage {
-    border-bottom: 4px solid black;
+
+.headerimage {
+    background-color: red;
+    border-bottom: 5px solid black;
     border-left: 4px solid black;
+    height: 100px;
+    padding-bottom: 0px;
+
+}
+#headerImage {
     border-top: 4px solid black;
     height: 90px;
     margin-bottom: 0px;
@@ -41,8 +49,11 @@ body {
     border: 1px solid red;
     border-radius: 5px;
     box-shadow: 3px 4px 20px 0px rgba(50, 50, 50, 1);
+    font-family: Josefin Sans;
+    font-size: 18px;
     font-weight: bolder;
 }
+
 .characterSelectContainer {
     /* background-color: gold;
     border: 2px solid black; */
@@ -54,10 +65,13 @@ body {
 }
 
 .previewContainer {
-    background-color: gold;
-    border: 1.5px solid black;
-    box-shadow: 3px 4px 20px 0px rgba(50, 50, 50, 1);
-    height: 1000px;
+    background-image: url("https://img.freepik.com/free-vector/blue-abstract-comic-book-background-cartoon-style-bigbamm-sunlight-vector-illustration_68708-190.jpg?size=626&ext=jpg");
+    background-size: 791.6px 1000px;
+    border-radius: 2px;
+    box-shadow:         0px -1px 18px 4px rgba(50, 50, 50, 1);
+    display: flex;
+    flex-wrap: wrap;
+    height: 920px;
     margin: 0 auto;
     padding: 0px 20px;
     width: 50%;
@@ -66,21 +80,43 @@ body {
 
 .previewHeader {
     font-family: 'Comic Neue', cursive;
+    margin: 0px 0px 0px 40px;
+    padding-top: 20px;
+    text-align: center;
+    
 }
 
 #characterName {
-    font-family: 'Comic Neue', cursive;;
+    font-family: 'Comic Neue', cursive;
+    font-size: 30px;
+    margin-left: 3.5%;
+    padding-top: 20px;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 #characterImage {
     border: 3px solid black;
     border-radius: 5px;
     box-shadow: 0px 10px 18px 0px rgba(50, 50, 50, 1);
-    margin-left: 35%;
+    margin-left: 3%;
+}
+
+#imageDescriptionContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#characterDescriptionHeader {
+    font-family: Josefin sans;
+    font-size: 20px;
+    margin-left: 5%;
 }
 
 #characterDescription {
     font-family: Josefin sans;
+    margin: 40px 0px 0px 20px;
 }
 
 .comicsContainer {
@@ -90,6 +126,7 @@ body {
 
 #comicsHeader {
     font-family: 'Comic Neue', cursive;
+    text-align: center;
 }
 
 #comicImage {

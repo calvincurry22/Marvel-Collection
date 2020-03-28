@@ -23,14 +23,17 @@ export const Character = (characterObj) => {
             characterContainer.innerHTML=
                  `
                     <h2 id="characterName">${characterObj.name}</h2>
-                    <img id="characterImage" src="${characterObj.thumbnail.path}/portrait_incredible.${characterObj.thumbnail.extension}" alt="" srcset="">
-                    <p id="characterDescription">Description: ${characterObj.description}</p>
+                    <div id="imageDescriptionContainer">
+                        <img id="characterImage" src="${characterObj.thumbnail.path}/portrait_incredible.${characterObj.thumbnail.extension}" alt="" srcset="">
+                        <p id="characterDescriptionHeader">Description:</p>
+                        <p id="characterDescription">${characterObj.description}</p>
+                    </div>
                     <h2 id="comicsHeader">Associated Comics</h2>
                     <div class="comicsContainer" style="overflow-y:scroll;">
-                    ${comicImages.map( comicObject => {
-                        return `<img id="comicImage" src="${comicObject.images[0].path}/portrait_xlarge.${comicObject.images[0].extension}" alt="" srcset="">`
+                        ${comicImages.map( comicObject => {
+                            return `<img id="comicImage" src="${comicObject.images[0].path}/portrait_xlarge.${comicObject.images[0].extension}" alt="" srcset="">`
 
-                    }).join("")}
+                        }).join("")}
                     </div>
 
             
