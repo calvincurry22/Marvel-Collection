@@ -13,7 +13,7 @@ const eventHub = document.querySelector(".container")
 export const CharacterPreview = () => {
 
    previewContainer.innerHTML = `
-        <h1>Preview</h1>
+        <h1 class="previewHeader">Select a character and preview their info here!</h1>
         <div class="characterContainer"></div>
    `
 }

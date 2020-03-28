@@ -11,7 +11,7 @@ export const CharacterSelect = () => {
 
     const renderCharacterSelect = (array) => {
         selectContainer.innerHTML = `
-            <fieldset>
+            
                 <select class="dropdown" id="characterSelect"> 
                 <option value="0">Select a character</option>
                 ${array.map(
@@ -20,7 +20,7 @@ export const CharacterSelect = () => {
                     }  
                 )}
                 </select>
-            </fieldset>        
+                
         `
     }
     renderCharacterSelect(extractedCharacterArray)

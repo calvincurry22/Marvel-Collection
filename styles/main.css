@@ -1,4 +1,97 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/93/57/13/935713ff9e64add0c841e15f88c114b9.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#pageHeader {
+    background-color: red;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    border-top: 4px solid black;
+    display: inline-flex;
+    font-family: Josefin Sans;
+    font-size: 80px;
+    letter-spacing: -11px;
+    margin: 0px 0px 0px 0px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.headerContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+#headerImage {
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-top: 4px solid black;
+    height: 90px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 400px;
+    
+}
+
+#characterSelect {
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: 3px 4px 20px 0px rgba(50, 50, 50, 1);
+    font-weight: bolder;
+}
+.characterSelectContainer {
+    /* background-color: gold;
+    border: 2px solid black; */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 70px;
+    padding: 10px;
+    width: 55%;
+}
+
 .previewContainer {
-    border: 1px solid black;
-    height: 80%;
+    background-color: gold;
+    border: 1.5px solid black;
+    box-shadow: 3px 4px 20px 0px rgba(50, 50, 50, 1);
+    height: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    width: 50%;
+    
+}
+
+.previewHeader {
+    font-family: 'Comic Neue', cursive;
+}
+
+#characterName {
+    font-family: 'Comic Neue', cursive;;
+}
+
+#characterImage {
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 10px 18px 0px rgba(50, 50, 50, 1);
+    margin-left: 35%;
+}
+
+#characterDescription {
+    font-family: Josefin sans;
+}
+
+.comicsContainer {
+    height: 400px;
+    margin-left: 10%;
+}
+
+#comicsHeader {
+    font-family: 'Comic Neue', cursive;
+}
+
+#comicImage {
+    margin-right: 5px;
 }
