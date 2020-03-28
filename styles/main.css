@@ -49,8 +49,11 @@ body {
     border: 1px solid red;
     border-radius: 5px;
     box-shadow: 3px 4px 20px 0px rgba(50, 50, 50, 1);
+    font-family: Josefin Sans;
+    font-size: 18px;
     font-weight: bolder;
 }
+
 .characterSelectContainer {
     /* background-color: gold;
     border: 2px solid black; */
