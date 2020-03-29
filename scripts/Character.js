@@ -31,6 +31,9 @@ export const Character = (characterObj) => {
                     <h2 id="comicsHeader">Associated Comics</h2>
                     <div class="comicsContainer" style="overflow-y:auto;">
                         ${comicImages.map( comicObject => {
+                            if(!comicObject.images[0]) {
+                                return;
+                            }
                             return `
                                 <div id="comicDetailsContainer">
                                 <a href="${comicObject.urls[0].url}"><img id="comicImage" src="${comicObject.images[0].path}/portrait_xlarge.${comicObject.images[0].extension}" alt="" srcset=""></a>
