@@ -29,10 +29,17 @@ export const Character = (characterObj) => {
                         <p id="characterDescription">${characterObj.description}</p>
                     </div>
                     <h2 id="comicsHeader">Associated Comics</h2>
-                    <div class="comicsContainer" style="overflow-y:scroll;">
+                    <div class="comicsContainer" style="overflow-y:auto;">
                         ${comicImages.map( comicObject => {
-                            return `<img id="comicImage" src="${comicObject.images[0].path}/portrait_xlarge.${comicObject.images[0].extension}" alt="" srcset="">`
-
+                            if(!comicObject.images[0]) {
+                                return;
+                            }
+                            return `
+                                <div id="comicDetailsContainer">
+                                <a href="${comicObject.urls[0].url}"><img id="comicImage" src="${comicObject.images[0].path}/portrait_xlarge.${comicObject.images[0].extension}" alt="" srcset=""></a>
+                                <button id="save--${comicObject.id}">Save Comic</button>
+                                </div>
+                                `
                         }).join("")}
                     </div>
 
