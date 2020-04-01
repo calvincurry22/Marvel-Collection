@@ -1,6 +1,6 @@
 import { Character } from "./Character.js"
 import { CharacterSelect } from "./CharacterSelect.js"
-import { useCharacters, saveComic } from "./CharacterDataProvider.js"
+import { useCharacters, saveComic, getComics, getSingleComic, useSingleComic } from "./CharacterDataProvider.js"
 import { ComicList } from "./CharacterList.js"
 
 
@@ -46,16 +46,30 @@ previewContainer.addEventListener("click", clickEvent => {
     if(clickEvent.target.id.startsWith("save--")) {
         const [prefix, idOfComic] = clickEvent.target.id.split("--")
 
-        const linkToComic = document.querySelector("#comicLink").getAttribute("href")
-        const imageOfComic = document.querySelector("#comicImage").getAttribute("src")
+        getSingleComic(idOfComic)
+            .then( () => {
+
+                const theSingleComic = useSingleComic()
+                const theSingleComicTitle = theSingleComic.data.results[0].title
+                const theSingleComicDetails = theSingleComic.data.results[0].urls[0].url
+                const theSingleComicImagePath = theSingleComic.data.results[0].images[0].path
+                const theSingleComicImageExt = theSingleComic.data.results[0].images[0].extension
+
+                const newComicObject = {
+                    comicTitle: theSingleComicTitle,
+                    comicLink: theSingleComicDetails,
+                    imagePath: theSingleComicImagePath,
+                    imageExtension: theSingleComicImageExt
+                }
+                saveComic(newComicObject)
+                ComicList()
+            })
         
-        const newComicObject = {
-            comicLink: linkToComic,
-            comicImage: imageOfComic,
-            comicID: idOfComic
+        
+        
            
-        }
-        saveComic(newComicObject)
-        ComicList()
+        
+        
+        
     }
 })

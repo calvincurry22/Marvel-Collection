@@ -1,6 +1,8 @@
 
 
 let characters = []
+let comics = []
+let singleComic = []
 let savedComics = []
 
 
@@ -30,6 +32,42 @@ export const useCharacters = () => {
     return characters
     
 }
+
+
+
+
+
+export const getComics = (charID) => {
+    return fetch(`https://gateway.marvel.com:443/v1/public/characters/${charID}/comics?limit=20&apikey=6d001b15224bd9411b67705ef5d04bb5`)
+        .then(response => response.json())
+        .then(parsedComics => {
+            comics = parsedComics
+        })
+}
+
+export const useComics = () => {
+    return comics
+}
+
+
+
+export const getSingleComic = (singleComicId) => {
+    return fetch(`https://gateway.marvel.com:443/v1/public/comics/${singleComicId}?apikey=6d001b15224bd9411b67705ef5d04bb5`)
+        .then(res => res.json())
+        .then(parsedComic => {
+            singleComic = parsedComic
+        })
+}
+
+
+export const useSingleComic = () => {
+    return singleComic
+}
+
+
+
+
+
 
 
 export const getSavedComics = () => {

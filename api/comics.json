@@ -1,3 +1,25 @@
 {
-  "comics": []
+  "comics": [
+    {
+      "comicTitle": "Ant-Man (2020) #3",
+      "comicLink": "http://marvel.com/comics/issue/81179/ant-man_2020_3?utm_campaign=apiRef&utm_source=6d001b15224bd9411b67705ef5d04bb5",
+      "imagePath": "http://i.annihil.us/u/prod/marvel/i/mg/a/70/5e5835fce8b69",
+      "imageExtension": "jpg",
+      "id": 1
+    },
+    {
+      "comicTitle": "Captain Marvel (2019) #16",
+      "comicLink": "http://marvel.com/comics/issue/82500/captain_marvel_2019_16?utm_campaign=apiRef&utm_source=6d001b15224bd9411b67705ef5d04bb5",
+      "imagePath": "http://i.annihil.us/u/prod/marvel/i/mg/7/10/5e67b8c771c28",
+      "imageExtension": "jpg",
+      "id": 2
+    },
+    {
+      "comicTitle": "Captain Marvel (2019) #16",
+      "comicLink": "http://marvel.com/comics/issue/82500/captain_marvel_2019_16?utm_campaign=apiRef&utm_source=6d001b15224bd9411b67705ef5d04bb5",
+      "imagePath": "http://i.annihil.us/u/prod/marvel/i/mg/7/10/5e67b8c771c28",
+      "imageExtension": "jpg",
+      "id": 3
+    }
+  ]
 }

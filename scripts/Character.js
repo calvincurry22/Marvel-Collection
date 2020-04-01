@@ -1,20 +1,12 @@
-let comics = []
+import { getComics, useComics } from "./CharacterDataProvider.js"
+
+
 const characterContainer = document.querySelector(".previewContainer")
 
 export const Character = (characterObj) => {
-    const getComics = () => {
-        return fetch(`https://gateway.marvel.com:443/v1/public/characters/${characterObj.id}/comics?limit=20&apikey=6d001b15224bd9411b67705ef5d04bb5`)
-            .then(response => response.json())
-            .then(parsedComics => {
-                comics = parsedComics
-            })
-    }
+   const characterID = characterObj.id
 
-    const useComics = () => {
-        return comics
-    }
-
-    getComics()
+    getComics(characterID)
         .then( () => {
 
             const comicCollection = useComics()
