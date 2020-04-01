@@ -36,8 +36,8 @@ export const Character = (characterObj) => {
                             }
                             return `
                                 <div id="comicDetailsContainer">
-                                <a href="${comicObject.urls[0].url}"><img id="comicImage" src="${comicObject.images[0].path}/portrait_xlarge.${comicObject.images[0].extension}" alt="" srcset=""></a>
-                                <button id="save--${comicObject.id}">Save Comic</button>
+                                <a id="comicLink" href="${comicObject.urls[0].url}"><img id="comicImage" src="${comicObject.images[0].path}/portrait_xlarge.${comicObject.images[0].extension}" alt="" srcset=""></a>
+                                <button class="saveComicButton" id="save--${comicObject.id}">Save Comic</button>
                                 </div>
                                 `
                         }).join("")}
@@ -46,6 +46,8 @@ export const Character = (characterObj) => {
             
 
                 `
+              
         })
+        
 }
 

@@ -1,6 +1,7 @@
 import { Character } from "./Character.js"
 import { CharacterSelect } from "./CharacterSelect.js"
-import { useCharacters } from "./CharacterDataProvider.js"
+import { useCharacters, saveComic } from "./CharacterDataProvider.js"
+import { ComicList } from "./CharacterList.js"
 
 
 
@@ -39,3 +40,22 @@ eventHub.addEventListener("characterSelected", customEvent => {
 
 })
 
+
+
+previewContainer.addEventListener("click", clickEvent => {
+    if(clickEvent.target.id.startsWith("save--")) {
+        const [prefix, idOfComic] = clickEvent.target.id.split("--")
+
+        const linkToComic = document.querySelector("#comicLink").getAttribute("href")
+        const imageOfComic = document.querySelector("#comicImage").getAttribute("src")
+        
+        const newComicObject = {
+            comicLink: linkToComic,
+            comicImage: imageOfComic,
+            comicID: idOfComic
+           
+        }
+        saveComic(newComicObject)
+        ComicList()
+    }
+})

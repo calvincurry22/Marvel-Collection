@@ -33,7 +33,7 @@ export const useCharacters = () => {
 
 
 export const getSavedComics = () => {
-    return fetch("http://localhost:8090/comics")
+    return fetch("http://localhost:3000/comics")
     .then(res => res.json())
     .then(parsedSavedComics => {
         savedComics = parsedSavedComics
@@ -46,7 +46,7 @@ export const useSavedComics = () => {
 
 
 export const saveComic = comic => {
-    return fetch('http://localhost:8090/comics', {
+    return fetch("http://localhost:3000/comics", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

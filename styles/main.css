@@ -171,3 +171,9 @@ button {
 a {
     height: 225px;
 }
+
+
+#comicComponentsContainer {
+    display: flex;
+    flex-direction: row;
+}
