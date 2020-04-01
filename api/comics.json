@@ -20,6 +20,20 @@
       "imagePath": "http://i.annihil.us/u/prod/marvel/i/mg/7/10/5e67b8c771c28",
       "imageExtension": "jpg",
       "id": 3
+    },
+    {
+      "comicTitle": "Giant-Man (2019) #3",
+      "comicLink": "http://marvel.com/comics/issue/75451/giant-man_2019_3?utm_campaign=apiRef&utm_source=6d001b15224bd9411b67705ef5d04bb5",
+      "imagePath": "http://i.annihil.us/u/prod/marvel/i/mg/f/b0/5cf7dc44c3e8c",
+      "imageExtension": "jpg",
+      "id": 4
+    },
+    {
+      "comicTitle": "Giant-Man (2019) #3",
+      "comicLink": "http://marvel.com/comics/issue/75451/giant-man_2019_3?utm_campaign=apiRef&utm_source=6d001b15224bd9411b67705ef5d04bb5",
+      "imagePath": "http://i.annihil.us/u/prod/marvel/i/mg/f/b0/5cf7dc44c3e8c",
+      "imageExtension": "jpg",
+      "id": 5
     }
   ]
 }
